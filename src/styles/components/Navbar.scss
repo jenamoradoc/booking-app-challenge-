@@ -1,0 +1,48 @@
+@import "../index.scss";
+
+.navbar {
+  background: #474787;
+  border-bottom: 1px solid #2c2c54;
+  border-bottom: 1px solid #ffffff31;
+  padding: 1.3rem 2rem;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    @include phone {
+      margin: 0 auto;
+      max-width: 334px;
+      width: 90%;
+    }
+  }
+
+  @include phone {
+    padding: 1rem 0;
+  }
+
+  &__logo {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    gap: 0.6rem;
+  }
+
+  &__button {
+    background: #2c2c54;
+    border-radius: 1rem;
+    border: 1px solid #ffffff5e;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #706fd3;
+    }
+  }
+}

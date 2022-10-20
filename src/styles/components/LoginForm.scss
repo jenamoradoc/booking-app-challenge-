@@ -1,0 +1,78 @@
+@import "../index.scss";
+
+.login__form {
+  -moz-box-shadow: 0 0 0.3rem 0 #fff;
+  -webkit-box-shadow: 0 0 0.3rem 0 #fff;
+  background: #474787;
+  box-shadow: 0 0 0.3rem 0 #fff;
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+
+  @include phone {
+    width: 90%;
+    max-width: 334px;
+  }
+
+  &_error {
+    background: #df4b4b;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.3rem 1rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  &_title {
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &_group {
+    display: grid;
+    gap: 0.2rem;
+
+    &__label {
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    &__input {
+      display: block;
+      font-size: 1rem;
+      padding: 0.4rem;
+      width: 100%;
+    }
+  }
+
+  &_button {
+    background: #2c2c54;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.4rem;
+    text-transform: capitalize;
+  }
+
+  span {
+    color: #fff;
+
+    h6,
+    p {
+      text-align: center;
+    }
+
+    h6 {
+      font-size: 0.9rem;
+      text-decoration: underline;
+    }
+
+    p {
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+  }
+}

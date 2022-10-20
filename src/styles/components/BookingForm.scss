@@ -1,0 +1,97 @@
+@import "../index.scss";
+
+.booking__form {
+  -moz-box-shadow: 0 0 0.3rem 0 #fff;
+  -webkit-box-shadow: 0 0 0.3rem 0 #fff;
+  background: #474787;
+  box-shadow: 0 0 0.3rem 0 #fff;
+  color: #fff;
+  display: grid;
+  gap: 0.8rem;
+  margin: 1rem auto auto;
+  padding: 3rem 2rem;
+  position: relative;
+  width: 24rem;
+
+  @include phone {
+    height: 550px;
+    margin: 0 auto;
+    max-width: 334px;
+    padding: 3rem 1rem;
+  }
+
+  &_alert {
+    align-items: center;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    left: 0.3rem;
+    padding: 0.05rem 0.5rem;
+    position: absolute;
+    top: 1rem;
+
+    @include phone {
+      left: 1rem;
+    }
+  }
+
+  &_group {
+    * {
+      font-size: 0.9rem;
+    }
+
+    display: grid;
+    gap: 0.1rem;
+
+    label {
+      display: block;
+    }
+
+    input,
+    textarea {
+      padding: 0.3rem 0.5rem;
+    }
+
+    textarea {
+      font-size: 0.9rem;
+      resize: none;
+      width: 100%;
+    }
+  }
+
+  &_button {
+    align-items: center;
+    border: none;
+    display: flex;
+    font-weight: bold;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  &_date {
+    display: grid;
+    gap: 0.8rem;
+    grid-template-columns: repeat(2, calc(50% - 0.35rem));
+  }
+
+  &_spinner {
+    bottom: 4rem;
+    display: flex;
+    height: 0;
+    justify-content: center;
+    left: 40%;
+    position: absolute;
+  }
+}
+
+.error {
+  background: #6b0000;
+  border: 1px solid #bd0000;
+}
+
+.success {
+  background: #0e331d;
+  border: 2px solid #1c7440;
+}

@@ -1,0 +1,25 @@
+@import "../index.scss";
+
+.not__found {
+  @include mainBackground;
+
+  div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 90vh;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+
+    h2 {
+      color: #fff;
+      text-transform: capitalize;
+    }
+  }
+}

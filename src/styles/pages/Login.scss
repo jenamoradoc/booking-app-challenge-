@@ -1,0 +1,9 @@
+@import "../index.scss";
+
+.login__page {
+  @include mainBackground;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  position: relative;
+}

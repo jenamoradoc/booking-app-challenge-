@@ -1,0 +1,41 @@
+@import "../index.scss";
+
+.page__view {
+  @include mainBackground;
+  height: 100vh;
+  overflow: hidden;
+
+  &_content {
+    display: grid;
+    grid-template-columns: 3rem calc(100% - 3rem);
+    height: 100%;
+
+    @include phone {
+      gap: 1rem;
+      grid-template-columns: 100%;
+      grid-template-rows: 3.5rem calc(110vh - 3.5rem);
+      overflow: scroll;
+    }
+  }
+
+  &_add_booking {
+    align-items: center;
+    background: #2c2c54;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    bottom: 2rem;
+    color: #fff;
+    display: flex;
+    font-size: 1.4rem;
+    height: 3.5rem;
+    justify-content: center;
+    position: absolute;
+    right: 2rem;
+    transform: all 1s ease;
+    width: 3.5rem;
+
+    &:hover {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,137 @@
+@import "../index.scss";
+
+.booking__list {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(3, calc(33% - 0.2rem));
+  list-style: none;
+  padding: 1rem 0 6rem;
+
+  @include phone {
+    grid-template-columns: 100%;
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(2, calc(50% - 0.3rem));
+    padding-bottom: 6rem;
+  }
+
+  &_item {
+    align-items: center;
+    background: #2c2c54;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 30% calc(70% - 1rem);
+    justify-content: space-between;
+    padding: 1.5rem;
+
+    @include phone {
+      padding: 1rem;
+    }
+
+    &_image {
+      display: grid;
+      height: 100%;
+      place-items: center;
+      position: relative;
+      width: 100%;
+
+      svg {
+        width: 100%;
+      }
+    }
+
+    &_calendar {
+      font-size: 0.9rem;
+      font-weight: bold;
+      position: absolute;
+      text-align: center;
+      top: 41%;
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  &_content {
+    align-items: center;
+    display: grid;
+    gap: 0.4rem;
+    height: 100%;
+
+    &_title,
+    &_description {
+      color: #fff;
+      justify-content: space-between;
+    }
+
+    &_times {
+      align-items: center;
+      color: #fff;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    &_buttons {
+      display: flex;
+      gap: 0.5rem;
+
+      a {
+        height: 100%;
+        text-decoration: none;
+        width: 100%;
+      }
+
+      a {
+        * {
+          color: #fff;
+        }
+      }
+
+      button {
+        align-items: center;
+        background: none;
+        border: none;
+        color: #fff;
+        display: flex;
+        font-size: 0.9rem;
+        gap: 0.5rem;
+        padding: 0.3rem 1rem;
+
+        &:first-child {
+          background: #0e331d;
+          border: 1px solid #1c7440;
+        }
+
+        &:last-child {
+          background: #6b0000;
+          border: 1px solid #bd0000;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  padding: 1rem 2rem;
+
+  @include phone {
+    margin: 0 auto auto;
+    padding: 1rem 0;
+    width: 334px;
+  }
+
+  h2 {
+    color: #ffffff;
+    text-shadow: -1px -1px 1px #ffffff1a, 1px 1px 1px #00000080;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: 0.1rem;
+  grid-template-columns: 38% 2% calc(60% - 0.2rem);
+  place-items: center;
+  width: 4rem;
+}
