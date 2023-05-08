@@ -1,4 +1,4 @@
-# Book App challenge
+# Book App challenge 2
 
 # Contributors of this Project
 * By David Enamorado on October 20th
